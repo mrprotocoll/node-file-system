@@ -11,7 +11,7 @@ https.get(uri, (resp) => {
   });
 
   resp.on('end', () => {
-    fs.writeFile("./result/post.json", data, (error) => {
+    fs.writeFile("./result/posts.json", data, (error) => {
         if(error) throw error;
     })
   });
